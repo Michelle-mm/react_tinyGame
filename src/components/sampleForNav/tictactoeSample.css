@@ -1,0 +1,84 @@
+#tictactoeBox-sample{
+    font-size: 0.9rem;
+    transform: scale(0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    text-align: center;
+    padding: 0.2rem;
+}
+#tictactoeBox-sample .tictactoe-title h3{
+    font-size: 1.2rem;
+}
+
+#tictactoeBox-sample .tictactoe-title p{
+    font-size: 0.6rem;
+    font-size: 500;
+    white-space: nowrap;
+}
+#tictactoeBox-sample >.tictactoe-title >.playerNum{
+    gap: 6px;
+}
+
+#tictactoeBox-sample > .tictactoe-title >.playerNum > button{
+    padding: 0.25rem;
+    border: 1.2px solid #336dd8;
+    box-shadow: 1.5px 1.5px 1.2px #336dd8;
+    font-size: 0.6rem;
+}
+
+#tictactoeBox-sample > .restartBtn{
+    flex: 1 1 20px;
+    width: 35%;
+    font-size: 0.7rem;
+    padding: 0.25rem;
+    color: #606060;
+    background-color: #dfdfdf;
+    border: 1.5px solid #606060;
+    margin-top: 0.2rem
+}
+
+.tictactoe.sample-tictactoe{
+    flex: 2 1 170px;
+    gap: 6px;
+    align-items: center;
+}
+
+.tictactoe.sample-tictactoe .sample-gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(33px, 43px));
+    grid-template-rows: repeat(3, minmax(33px, 43px));
+    gap: 1.5px;
+    font-size: 13px;
+}
+#tictactoeBox-sample > .tictactoe .btn{
+    border: 1.3px solid #606060;
+    border-radius: 2px;
+    box-shadow: 1.3px 1.3px #606060;
+}
+.sample-gameInfo{
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+}
+
+.sample-gameInfo ol{
+    list-style: none;
+}
+.sample-gameInfo li{
+    font-size: 0.5rem;
+    border: 1.5px solid #336dd8;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+    box-shadow: 2px 2px 1.2px #336dd8;
+    color: white;
+    padding: 3px;
+    margin-top: 5px;
+    max-width: 70px;
+}
+#tictactoeBox-sample .tictactoe-title button:hover, 
+.sample-gameInfo li:hover{
+    transform: translate(0.8px, 0.8px);
+    box-shadow: 1.1px 1.1px 1px #336dd8;
+}

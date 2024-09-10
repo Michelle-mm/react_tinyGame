@@ -1,0 +1,55 @@
+#mineSampleBox{
+    /* transform: scale(0.95); */
+    padding: 0.7rem;
+    height: clamp(250px, 100%, 450px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: #606060;
+    background-color: cornflowerblue;
+    border-radius: 18px;
+    position: relative;
+}
+
+#mineSampleBox>.setting>.btn{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    box-shadow: 1px 1px #606060;
+    font-weight: 600;
+    font-size: 0.7rem;
+    padding: 3px 2px 1px;
+}
+
+.mineSample-board{
+    width: 100%;
+    display: grid;
+    grid-template: repeat(5, 1fr)/ repeat(5, 1fr);
+    border: 2px solid #606060;
+    border-radius: 5px;
+}
+.mineSample-cell{
+    color: #606060;
+    border: 1px solid #606060;
+    border-radius: 2px;
+    background-color: #70737c;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+#mineSampleBox > .records{
+    width: 70%;
+}
+
+#mineSampleBox >.records>p, #mineSampleBox >.records .counter{
+    flex-basis: 80px;
+    font-size: 0.6rem;
+    box-shadow: 1px 1px whitesmoke;
+    border: 1px solid whitesmoke;
+}
+
+#mineSampleBox:hover{
+    color: whitesmoke;
+}

@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+.gameBox.tenziespage{
+    gap: 2rem;
+    position: relative;
+    padding: 0.7rem 0.5rem;
+    background-color: #8aaff5;
+}
+.gameBox.tenziespage > h3.tenzie-title{
+    font-size: 2rem;
+    text-shadow: 0.5px 0.5px white;
+}
+.dice-container {
+    /* border: 2px solid red; */
+    flex: 2 1 200px;
+    width: clamp(350px, 100%, 500px);
+    height: auto;
+    overflow: hidden;
+    padding: 3px;
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    place-content: center;
+    gap: clamp(5px, 3%, 15px);
+}
+
+.die-face{
+    color: #606060;
+    padding: 3px;
+    border: 2px solid #606060;
+    border-radius: 5px;
+    box-shadow: 2.2px 2.2px #606060;
+    cursor: pointer;
+}
+
+.die-face:hover{
+    transform: translate(1px, 1px);
+    box-shadow: 0.5px 0.5px #4e4e4e;
+}
+.die-face {
+    padding: 0.6rem 0;
+    height: clamp(60px, 4.5rem, 80px);
+    width: clamp(60px, 4.5rem, 80px);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.die-num, .die-dot {
+    font-size: 2rem;
+}
+.roll-btns{
+    flex: 1 1 100px;
+}
+.gameBox.tenziespage .roll-btns>button.restartBtn{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.roll-dicebtn{
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #606060;
+    box-shadow: 2px 2px #606060;
+    background-color: #eeeeee;
+    width: max(6rem, 200px);
+    padding: 10px 1.2rem;
+    margin-right: 6px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #606060;
+    white-space: nowrap;
+}
+
+.roll-dicebtn:focus {
+    outline: none;
+}
+
+.roll-dicebtn:active, .roll-dicebtn:hover{
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px #424242;
+}
+
+.tenzie-counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.timerContainer, .dieCounter{
+    /* height: 30px; */
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    flex-basis: 200px;
+    flex-grow: 1;
+    background-color: wheat;
+    border: 2px solid #606060;
+    border-radius: 5px;
+    padding: 0.6rem;
+}
+
+.timerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+
+
+

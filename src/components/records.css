@@ -1,0 +1,178 @@
+.gameBox.recordsBox{
+    overflow-y: auto;
+    gap: 0.6rem;
+    position: relative;
+}
+
+.gameBox.recordsBox .record-header{
+    width: 80%;
+    text-align: center;
+    position: relative;
+}
+
+.gameBox.recordsBox h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.btn.clearAllBtn{
+    font-weight: 500;
+    font-size: 1.1rem;
+    overflow: hidden;
+    opacity: 0.8;
+    margin: 0.3rem 0 0;
+}
+.btn.clearAllBtn:hover{
+    color: #eb5353;
+    border-color: #eb5353;
+    box-shadow: 1px 1px #eb5353;
+    background-color: whitesmoke;
+    padding-right: 90px;
+    transition: padding 0.4s ease;
+}
+
+.btn.clearAllBtn::after{
+    content: "clear all";
+    position: absolute;
+    /* right: 10px; */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #eb5353;
+    font-weight: 600;
+    transition: width 0.4s ease, opacity 0.4s ease;
+}
+.btn.clearAllBtn:hover::after {
+    width: 80px;
+    opacity: 1;
+  }
+.gameBox.recordsBox .gamesRecords{
+    flex-grow: 1;
+    overflow: auto;
+    width: 77%;
+    padding: 1rem;
+}
+.gameBox.recordsBox .gamesRecords::-webkit-scrollbar{
+    display: none;
+}
+.gameBox.recordsBox .box{
+    height: 250px;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+    font-size: 1.1rem;
+    border: 2px solid #606060;
+    border-radius: 10px;
+    box-shadow: 2.2px 2.2px #606060;
+    background-color: white;
+    position: relative;
+}
+.gameBox.recordsBox .box:nth-child(odd){
+    background-color: lightblue;
+}
+.gameBox.recordsBox .box::-webkit-scrollbar{
+    display: none;
+}
+
+.gameBox.recordsBox .box > .title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: white;
+    padding: 0.5rem;
+    border-bottom: 1.5px solid #606060bd;
+    border-radius: 10px;
+    padding-bottom: 0.5rem;
+    position: sticky; 
+    top: 2px;
+    position: relative;
+}
+.gameBox.recordsBox .box:nth-child(odd) .title{
+    background-color: lightblue;
+}
+
+.btn.titleBtn{
+    position: absolute;
+    top: 0.4rem;
+    right: 2rem;
+}
+.titleBtn i{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.gameBox.recordsBox ol{
+    margin-left: 1rem;
+    text-decoration: none;
+    list-style: none;
+}
+.gameBox.recordsBox li{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.3rem;
+    padding: 0.1rem;
+    border-bottom: 1px solid #ccc;
+}
+.gameBox.recordsBox .box:nth-child(odd) li{
+    border-bottom: 1px solid #ffffff;
+}
+.gameBox.recordsBox li:nth-child(odd){
+    color: cornflowerblue;
+}
+
+.no-records{
+    color: lightgray;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+.gameBox.recordsBox .box:nth-child(odd) .no-records{
+    color: darkgray;
+    text-shadow: 1.1px 1.1px #606060;
+}
+
+.confirmDeleteBox{
+    z-index: 20;
+    text-align: center;
+    padding: 3.5rem 1rem 0.7rem;
+    /* position: absolute;
+    top:50%;
+    left:50%;
+    padding:50px;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); */
+    width: 80%;
+    height: 22%;
+    border: 3px solid #606060;
+    border-radius: 10px;
+    box-shadow: 3px 3px #606060;
+    background-color: cornsilk;
+}
+.confirmDeleteBox .btns{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+.confirmDeleteBox .btns .btn{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+
+}
+.btn.yes{
+    background-color: lightblue;
+}
+.btn.no{
+    background-color: lightcoral;
+}
+
+@media screen and (min-width: 780px){
+    .btn.clearAllBtn{
+        position: absolute;
+        top: 1rem;
+        right: 3rem;
+    }
+}

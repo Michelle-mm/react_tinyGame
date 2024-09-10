@@ -1,0 +1,54 @@
+#tenzieSample{
+    padding-top: 1.2rem;
+    color: #606060;
+    font-size: 1.1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.tenzieSample:hover{
+    color: burlywood;
+}
+#tenzieSample > .tenzieSample-counter{
+    gap: 4px;
+}
+#tenzieSample > .tenzieSample-counter > .tenzieSample-timer, .tenzieSample-dieCounter{
+    flex-basis: 50px;
+    font-size: 0.65rem;
+    padding: 5px;
+}
+#tenzieSample > .dice-container{
+    width: 90%;
+    gap: 3px;
+    flex: 1 1 90px;
+}
+#tenzieSample .tenzieSample-dieFace{
+    font-size: 1rem;
+    height: clamp(20px, 2.4rem, 34px);
+    width: clamp(20px, 2.4rem, 34px);
+    border: 1.5px solid #606060;
+    box-shadow: 1.5px 1.5px #606060;
+}
+
+.tenzieSample-btns{
+    flex: 1 1 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+    width: 80px;
+    color: white;
+}
+.tenzieSample-btns>.btn{
+    font-size: 1rem;
+    flex-grow: 1;
+}
+.tenzieSample-btns > .restartBtn{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
